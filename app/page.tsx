@@ -2,6 +2,7 @@ import Image from "next/image";
 import Scroll from "./components/ScrollComponent";
 import Button from "./components/Button";
 import HoverAnimations from "./components/HoverandExit";
+import Dashboard from "./components/Dashboard";
 
 export default function Home() {
   return (
@@ -11,10 +12,11 @@ export default function Home() {
       //   backgroundSize : "8px 8px",
       //   backgroundRepeat : "repeat"
       //  }}
-    className="h-screen w-full mx-auto bg-neutral-50 flex justify-center items-center">
+    className="h-screen w-full mx-auto bg-neutral-50 ">
       {/* <Scroll/> */}
       {/* <Button/> */}
-      <HoverAnimations/>
+      {/* <HoverAnimations/> */}
+      <Dashboard/>
       </div></>
   );
 }
