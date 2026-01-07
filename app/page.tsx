@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import HoverAnimations from "./components/HoverandExit";
 import Dashboard from "./components/Dashboard";
 import Parallax from "./components/parallax";
+import Layout from "./components/layout";
 
 
 export default function Home() {
@@ -15,13 +16,14 @@ export default function Home() {
         //   backgroundSize : "8px 8px",
         //   backgroundRepeat : "repeat"
         //  }}
-        className="w-full mx-auto bg-neutral-800"
+        className="w-full h-screen flex-col justify-center items-center p-5 mx-auto bg-neutral-200"
       >
         {/* <Scroll/> */}
         {/* <Button/> */}
         {/* <HoverAnimations/> */}
         {/* <Dashboard/> */}
-        <Parallax/>
+        {/* <Parallax/> */}
+        <Layout/>
       </div>
     </>
   );
