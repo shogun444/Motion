@@ -6,7 +6,10 @@ import Dashboard from "./components/Dashboard";
 import Parallax from "./components/parallax";
 import Layout from "./components/layout";
 import Sequences from "./components/sequences";
-import PayButton from "./components/PayButton";
+import PayButton from "./components2/PayButton";
+
+import Text from "./components2/text";
+import PaymentButton from "./components2/PaymentButton";
 
 
 export default function Home() {
@@ -18,12 +21,7 @@ export default function Home() {
         //   backgroundSize : "8px 8px",
         //   backgroundRepeat : "repeat"
         //  }}
-        className="w-full h-screen flex-col justify-center items-center  mx-auto bg-neutral-900"
-      style={{
-        backgroundImage : `radial-gradient(circle at 0.5px 0.5px , rgba(255,255,255,0.2) 1px, transparent 0)`,
-        backgroundRepeat : "repeat",
-        backgroundSize: "8px 8px"
-      }}
+        className="w-full h-screen flex justify-center items-center  mx-auto bg-neutral-900"
       >
         {/* <Scroll/> */}
         {/* <Button/> */}
@@ -31,8 +29,11 @@ export default function Home() {
         {/* <Dashboard/> */}
         {/* <Parallax/> */}
         {/* <Layout/> */}
-        <PayButton/>
-        <Sequences/>
+        {/* <PayButton/>
+        <Sequences/> */}
+        {/* <AnimatedText/> */}
+      {/* <Text/> */}
+      <PaymentButton/>
       </div>
     </>
   );
