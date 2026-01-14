@@ -18,7 +18,9 @@ export default function PaymentButton() {
         scale: [1, 0.8, 1],
         backgroundImage: "linear-gradient(green)",
       },
-      { ease: "easeInOut" }
+      { ease: "easeInOut" ,
+        duration : 0.4
+      }
     );
     animate(
       ".check-svg",
@@ -29,13 +31,13 @@ export default function PaymentButton() {
         ease: "easeInOut",
       }
     );
-    animate(".path",{pathLength:1},{type : "tween"})
+     animate(".path",{pathLength:1,},{type : "tween",duration : 0.3})
   }
   return (
     <div ref={scope}>
       <motion.button
         onClick={start}
-        className="fight h-15 w-70 cursor-pointer rounded-md bg-linear-to-r from-neutral-700 to-neutral-800"
+        className="fight h-15 w-70 cursor-pointer rounded-md bg-linear-to-r from-teal-600 to-teal-800"
       >
         <motion.span className="text-neutral-50 font-semibold">
           PayNow ($110)
@@ -56,6 +58,7 @@ export default function PaymentButton() {
           initial={{
             pathLength: 0,
           }}
+         
           strokeLinecap="round"
           strokeLinejoin="round"
           d="m4.5 12.75 6 6 9-13.5"

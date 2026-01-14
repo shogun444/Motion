@@ -10,6 +10,8 @@ import PayButton from "./components2/PayButton";
 
 import Text from "./components2/text";
 import PaymentButton from "./components2/PaymentButton";
+import IphoneCards from "./components2/IphoneCards";
+import Navbar from "./components2/navbar";
 
 
 export default function Home() {
@@ -21,7 +23,7 @@ export default function Home() {
         //   backgroundSize : "8px 8px",
         //   backgroundRepeat : "repeat"
         //  }}
-        className="w-full h-screen flex justify-center items-center  mx-auto bg-neutral-900"
+        className="w-full h-screen flex justify-center items-center   m-auto bg-neutral-900"
       >
         {/* <Scroll/> */}
         {/* <Button/> */}
@@ -33,7 +35,9 @@ export default function Home() {
         <Sequences/> */}
         {/* <AnimatedText/> */}
       {/* <Text/> */}
-      <PaymentButton/>
+      {/* <PaymentButton/> */}
+      {/* <IphoneCards/> */}
+      <Navbar/>
       </div>
     </>
   );
